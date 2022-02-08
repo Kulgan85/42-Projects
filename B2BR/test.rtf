@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww13660\viewh21500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Login as root\
+	su -\
+\
+Install/update sudo\
+	apt-get update -y\
+\
+Add user to sudo group\
+	usermod - aG sudo your_username\
+\
+Check for user in sudo group\
+	getent group sudo\
+\
+Sudoers file\
+	sudo vimudo\
+\
+Git version\
+	git - -version\
+\
+SSH\
+	sudo apt-get update\
+\
+Status\
+	sudo systemctl status ssh\
+\
+Restart service\
+	service ssh restart\
+\
+Changing port\
+	sudo nano /etc/ssh/sshd_config\
+\
+Check if port settings\
+	sudo grep Port /etc/ssh/sshd_config\
+\
+UFW (uncomplicated firewall)\
+	apt-get install ufw\
+\
+Enable firewall\
+	sudo ufw enable\
+\
+Status\
+	sudo ufw status numbered\
+\
+Configure rules\
+	sudo ufw allow ssh\
+\
+Port rules\
+	sudo ufw allow \'93port-number\'94\
+\
+Delete rules\
+	Sudo ufw delete (number)\
+\
+SSH IN\
+	ssh tbertozz@127.0.0.1 -p 4242\
+\
+Password Policy\
+10 char\
+1 UP\
+1 Low\
+Can\'92t 3 same char\
+Expire 30 day\
+Min day mod is 2\
+Warn 7 days before\
+No username\
+Can\'92t have 7 characters from former\
+Root user same rules\
+\
+Sudo nano /etc/pam.d/common-password\
+\
+Expiration\
+	sudo nano /etc/login.defs\
+\
+Create group\
+	sudo grouped evaluating\
+\
+Check group\
+	getent group\
+\
+Create user\
+	sudo adduser new_username \
+\
+Change group\
+	sudo user mod -aG evaluating username\
+\
+Groups\
+	groups\
+\
+Test password\
+	chage -l username\
+\
+Hostname check\
+	hostnamectl\
+\
+Lvm\
+	logical volume manager - Linux\
+\
+Cron\
+	sudo crontab -u root -e\
+\
+Partition\
+	lsblk}
